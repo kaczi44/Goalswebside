@@ -4,4 +4,52 @@
 }
 
 <h2>Time</h2>
+<span id="timer">
+   
+</span>
+  
+<span id="timer2"></span>
 
+
+ <script type="text/javascript">
+
+     function time()
+     {
+         var watch = new Date();
+
+         var houer = watch.getHours();
+         var minutes = watch.getMinutes();
+         var sekonds = watch.getSeconds();
+
+         document.getElementById("timer2").innerHTML = houer + ":" + minutes + ":" + sekonds;
+
+         
+     }
+     setTimeout(time, 1000);
+
+     
+ </script>
+
+
+
+
+    <script>
+
+        var count = 30;
+
+        var counter=setInterval(timer, 1000); //1000 will  run it every 1 second
+
+        function timer()
+        {
+            count=count-1;
+            if (count <= 0)
+            {
+                clearInterval(counter);
+                //counter ended, do something here
+                return;
+            }
+            document.getElementById("timer").innerHTML = count + " secs";
+            //Do code for showing the number of seconds here
+        }
+
+    </script>
