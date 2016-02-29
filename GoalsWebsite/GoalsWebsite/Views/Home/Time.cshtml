@@ -3,7 +3,7 @@
     ViewBag.Title = "Time";
 }
 
-<h2>Time</h2>
+<h2 id="Timer1234">Time</h2>
 <span id="timer">
    
 </span>
@@ -20,8 +20,8 @@
          var houer = watch.getHours();
          var minutes = watch.getMinutes();
          var sekonds = watch.getSeconds();
-
-         document.getElementById("timer2").innerHTML = houer + ":" + minutes + ":" + sekonds;
+         $("#timer2").html(houer + ":" + minutes + ":" + sekonds);
+         //document.getElementById("timer2").innerHTML = houer + ":" + minutes + ":" + sekonds;
 
          
      }
