@@ -196,11 +196,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PersonalDetailsController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="DbContexts\WebsiteContext.cs" />
+    <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\PersonalDetails.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Global.asax.cs">
@@ -282,6 +284,11 @@
     <Content Include="Views\PersonalDetails\Details.cshtml" />
     <Content Include="Views\PersonalDetails\Edit.cshtml" />
     <Content Include="Views\PersonalDetails\Index.cshtml" />
+    <Content Include="Views\Categories\Create.cshtml" />
+    <Content Include="Views\Categories\Delete.cshtml" />
+    <Content Include="Views\Categories\Details.cshtml" />
+    <Content Include="Views\Categories\Edit.cshtml" />
+    <Content Include="Views\Categories\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

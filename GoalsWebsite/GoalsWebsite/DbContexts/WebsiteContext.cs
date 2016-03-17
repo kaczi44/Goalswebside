@@ -13,6 +13,8 @@ namespace GoalsWebsite.DbContexts
 
         public DbSet<PersonalDetails> Details { get; set; }
 
+        public DbSet<Category> Categories { get; set; } 
+
         public WebsiteContext() : base("DefaultConnection")
         {
             Database.SetInitializer<WebsiteContext>(new DropCreateDatabaseIfModelChanges<WebsiteContext>());
