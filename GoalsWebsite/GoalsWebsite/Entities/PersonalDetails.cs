@@ -6,7 +6,7 @@ using System.Web;
 
 namespace GoalsWebsite.Entities
 {
-    public class PersonalDetals
+    public class PersonalDetails
     {
        public Guid id { get; set; }
         public string FirstName { get; set; }

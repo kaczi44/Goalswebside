@@ -8,12 +8,14 @@ using System.Web;
 namespace GoalsWebsite.DbContexts
 {
     public class WebsiteContext : DbContext
-    {
+    {        
         public DbSet<Product> Products { get; set; }
+
+        public DbSet<PersonalDetails> Details { get; set; }
 
         public WebsiteContext() : base("DefaultConnection")
         {
-
-        }
+            Database.SetInitializer<WebsiteContext>(new DropCreateDatabaseIfModelChanges<WebsiteContext>());
+        }        
     }
 }
